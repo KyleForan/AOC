@@ -1,5 +1,5 @@
 
-data = open("input").read().split("\n")
+data = open("Day01/input").read().split("\n")
 
 rhs = []
 lhs = []

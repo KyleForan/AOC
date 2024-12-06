@@ -1,6 +1,6 @@
 import re
 
-data = open("input").read()
+data = open("Day03/input").read()
 sums = re.findall(r'mul\((\d+),(\d+)\)', data)
 
 total = 0

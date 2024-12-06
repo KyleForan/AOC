@@ -1,5 +1,5 @@
 
-data = open("Day4/input").read()
+data = open("Day04/input").read()
 data = [ list(line) for line in data.split("\n")]
 
 result = 0

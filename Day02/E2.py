@@ -1,6 +1,6 @@
 import numpy as np
 
-data = open('input').read().split("\n")
+data = open('Day02/input').read().split("\n")
 data = [ 
     [ 
         int(num) for num in line.split(" ") 

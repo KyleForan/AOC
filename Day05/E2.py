@@ -1,4 +1,4 @@
-data = open("Day5/input").read()
+data = open("Day05/input").read()
 rules, updates = data.split("\n\n")
 
 

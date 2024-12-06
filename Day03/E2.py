@@ -1,6 +1,6 @@
 import re
 
-data = open("input").read()
+data = open("Day03/input").read()
 instructions = re.findall(r"mul\((\d+),(\d+)\)|(do\(\)|don't\(\))", data)
 
 total = 0
