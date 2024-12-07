@@ -20,7 +20,6 @@ while True:
     next_pos = x + directions[currentDirection][0], y + directions[currentDirection][1]
     j, k = next_pos
     path.add((x, y))
-    # grid[x][y] = 'x'
 
     if 0 > j or j >= len(grid) or 0 > k or k >= len(grid[0]):
         break
@@ -43,11 +42,13 @@ def part1Again(startI, startJ, matrix):
         nextI, nextJ = [(-1, 0), (0, 1), (1, 0), (0, -1)][new_direction]
         nextI, nextJ = startI + nextI, startJ + nextJ
 
-        if not (0 <= nextI < len(matrix) and 0 <= nextJ < len(matrix[0])):
+        # if 0 > j or j >= len(grid) or 0 > k or k >= len(grid[0]):
+        if 0 > nextI <= len(matrix) or 0 > nextJ >= len(matrix[0]):
             break
 
         if matrix[nextI][nextJ] == '#':
-            new_direction = (new_direction + 1) % 4
+            new_direction +=1
+            new_direction %= 4
             continue
 
         startI, startJ = nextI, nextJ
